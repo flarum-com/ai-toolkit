@@ -26,7 +26,7 @@ class ReplyToPosts
                 // Prevent eternal loops of replying to oneself.
                 ->filter(fn (Agent $agent) => $agent->user()->isNot($event->post->user))
                 // Filter agents based on their tag permissions.
-                ->filter(fn (Agent $agent) => $this->policy->reply($agent, $event->post) || $this->policy->respond($agent, $event->post))
+                ->filter(fn (Agent $agent) => $this->policy->reply($agent, $event->post) || ($this->policy->respond($agent, $event->post) && $event->post->mentionsUsers->contains($agent->user())))
                 // Push sending to the queue.
                 ->each(fn (Agent $agent) => $this->queue->push(new InteractionJob($agent, $event->post)));
         });
