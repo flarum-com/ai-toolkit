@@ -1,0 +1,6 @@
+blomstra-ai-toolkit:
+    admin:
+        setting:
+            api-key: API key
+            model: AI Model
+            api-organisation: API organisation
