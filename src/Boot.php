@@ -1,9 +1,9 @@
 <?php
 
-namespace Blomstra\Ai;
+namespace Flarum\Ai;
 
-use Blomstra\Ai\Agent\Collection;
-use Blomstra\Ai\Interaction\Feature;
+use Flarum\Ai\Agent\Collection;
+use Flarum\Ai\Interaction\Feature;
 use Flarum\Settings\SettingsRepositoryInterface;
 use Illuminate\Contracts\Container\Container;
 use OpenAI;
@@ -19,8 +19,8 @@ class Boot
         /** @var SettingsRepositoryInterface $settings */
         $settings = $container->make(SettingsRepositoryInterface::class);
 
-        $apiKey = $settings->get('blomstra-ai-toolkit.openai-api-key');
-        $organisation = $settings->get('blomstra-ai-toolkit.openai-api-organisation');
+        $apiKey = $settings->get('flarum-ai-toolkit.openai-api-key');
+        $organisation = $settings->get('flarum-ai-toolkit.openai-api-organisation');
 
         if ($apiKey) {
             $client = OpenAI::client($apiKey, $organisation);

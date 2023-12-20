@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\Ai\Agent;
+namespace Flarum\Ai\Agent;
 
-use Blomstra\Ai\Agent;
+use Flarum\Ai\Agent;
 use Illuminate\Support\Collection as LaravelCollection;
 
 class Collection extends LaravelCollection

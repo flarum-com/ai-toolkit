@@ -1,11 +1,11 @@
 <?php
 
-namespace Blomstra\Ai\Content;
+namespace Flarum\Ai\Content;
 
-use Blomstra\Ai\Agent;
-use Blomstra\Ai\Interaction\Feature;
-use Blomstra\Ai\Message\Factory;
-use Blomstra\Ai\Message\Message;
+use Flarum\Ai\Agent;
+use Flarum\Ai\Interaction\Feature;
+use Flarum\Ai\Message\Factory;
+use Flarum\Ai\Message\Message;
 use Flarum\Discussion\Discussion;
 use Flarum\Foundation\DispatchEventsTrait;
 use Flarum\Post\CommentPost;

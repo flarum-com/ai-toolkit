@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\Ai;
+namespace Flarum\Ai;
 
 use Flarum\Discussion\Discussion;
 use Flarum\User\Guest;

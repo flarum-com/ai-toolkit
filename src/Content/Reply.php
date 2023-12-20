@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\Ai\Content;
+namespace Flarum\Ai\Content;
 
-use Blomstra\SupportAi\Event\Replying;
+use Flarum\SupportAi\Event\Replying;
 use Flarum\Post\Post;
 
 class Reply

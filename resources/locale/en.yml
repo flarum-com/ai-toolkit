@@ -1,4 +1,4 @@
-blomstra-ai-toolkit:
+flarum-ai-toolkit:
     admin:
         setting:
             api-key: API key

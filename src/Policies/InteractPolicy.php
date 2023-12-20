@@ -1,9 +1,9 @@
 <?php
 
-namespace Blomstra\Ai\Policies;
+namespace Flarum\Ai\Policies;
 
-use Blomstra\Ai\Agent;
-use Blomstra\Ai\Interaction\Feature;
+use Flarum\Ai\Agent;
+use Flarum\Ai\Interaction\Feature;
 use Flarum\Post\CommentPost;
 use Illuminate\Support\Collection;
 

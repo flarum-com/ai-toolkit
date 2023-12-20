@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\Ai\Interaction;
+namespace Flarum\Ai\Interaction;
 
 use Flarum\Extension\ExtensionManager;
 

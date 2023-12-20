@@ -1,6 +1,6 @@
 <?php
 
-namespace Blomstra\Ai\Agent;
+namespace Flarum\Ai\Agent;
 
 enum Role
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Blomstra\Ai\Message;
+namespace Flarum\Ai\Message;
 
-use Blomstra\Ai\Agent;
-use Blomstra\Ai\Agent\Role;
+use Flarum\Ai\Agent;
+use Flarum\Ai\Agent\Role;
 use Flarum\Discussion\Discussion;
 use Flarum\Post\CommentPost;
 use Flarum\Post\Post;

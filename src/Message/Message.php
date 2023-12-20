@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\Ai\Message;
+namespace Flarum\Ai\Message;
 
-use Blomstra\Ai\Agent\Role;
+use Flarum\Ai\Agent\Role;
 use Illuminate\Contracts\Support\Arrayable;
 
 class Message implements Arrayable

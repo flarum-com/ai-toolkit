@@ -1,8 +1,8 @@
 <?php
 
-namespace Blomstra\Ai\Agent;
+namespace Flarum\Ai\Agent;
 
-use Blomstra\Ai\Extend\Ai;
+use Flarum\Ai\Extend\Ai;
 use Flarum\Database\Eloquent\Collection as EloquentCollection;
 use Flarum\Tags\Tag;
 
@@ -12,6 +12,8 @@ class Authorization
     public bool $reply = false;
     public bool $initiate = false;
     public bool $respond = false;
+    public int $delayMin = 0;
+    public ?int $delayMax = null;
 
     public function __construct(private Ai $return)
     {}
@@ -53,6 +55,14 @@ class Authorization
     public function initiate(bool $initiateDiscussions = true): self
     {
         $this->initiate = $initiateDiscussions;
+
+        return $this;
+    }
+
+    public function delayed(int $min, int $max = null): self
+    {
+        $this->delayMin = $min;
+        $this->delayMax = $max;
 
         return $this;
     }

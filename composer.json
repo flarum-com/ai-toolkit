@@ -1,10 +1,9 @@
 {
-    "name": "blomstra/ai-toolkit",
+    "name": "flarum/ai-toolkit",
     "description": "The chatgpt toolkit for your community.",
     "keywords": [
         "extension",
         "flarum",
-        "blomstra",
         "ai",
         "chatgpt",
         "openai"
@@ -25,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Blomstra\\Ai\\": "src/"
+            "Flarum\\Ai\\": "src/"
         }
     },
     "require-dev": {
@@ -34,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Blomstra\\Ai\\Tests\\": "tests/"
+            "Flarum\\Ai\\Tests\\": "tests/"
         }
     },
     "extra": {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Blomstra\Ai\Extend;
+namespace Flarum\Ai\Extend;
 
-use Blomstra\Ai\Agent;
-use Blomstra\Ai\Agent\Authorization;
-use Blomstra\Ai\Agent\Collection;
-use Blomstra\Ai\Agent\Model;
-use Blomstra\Ai\Boot;
+use Flarum\Ai\Agent;
+use Flarum\Ai\Agent\Authorization;
+use Flarum\Ai\Agent\Collection;
+use Flarum\Ai\Agent\Model;
+use Flarum\Ai\Boot;
 use Flarum\Discussion\Discussion;
 use Flarum\Extend\ExtenderInterface;
 use Flarum\Extension\Extension;

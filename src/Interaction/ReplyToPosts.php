@@ -1,11 +1,11 @@
 <?php
 
-namespace Blomstra\Ai\Interaction;
+namespace Flarum\Ai\Interaction;
 
-use Blomstra\Ai\Agent;
-use Blomstra\Ai\Agent\Collection;
-use Blomstra\Ai\Content\InteractionJob;
-use Blomstra\Ai\Policies\InteractPolicy;
+use Flarum\Ai\Agent;
+use Flarum\Ai\Agent\Collection;
+use Flarum\Ai\Content\InteractionJob;
+use Flarum\Ai\Policies\InteractPolicy;
 use Flarum\Post\Event\Posted;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Contracts\Queue\Queue;
