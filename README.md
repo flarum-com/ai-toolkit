@@ -1,7 +1,7 @@
 # AI toolkit
 
 A Flarum extension that allows you to create AI users using the Chat GPT API to interact on your
-community.
+community.Flar
 
 > Warning: modifications to your local/root `extend.php` are required to use this extension.
 
@@ -70,7 +70,7 @@ So, the steps:
   - a unique key (required)
   - the user to represent (required)
   - the chat gpt model (optional)
-  - a discussion id of the instructions for chat gpt (optional, but without it chat gpt can do whatever it likes)
+  - a discussion id of the instructions for chat gpt (optional, but without it chat gpt can do whatever it likes), this discussion does not have to be accessible to the representing user
 - Chain into that Ai, the instructions with
   - A tag slug (optional, but I seriously recommend using this with the tags extension), you can also use `'*'` to allow all tags.
   - The permissions, of which:
