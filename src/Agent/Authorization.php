@@ -67,7 +67,7 @@ class Authorization
         return $this;
     }
 
-    public function return(): Ai
+    public function activate(): Ai
     {
         return $this->return;
     }
