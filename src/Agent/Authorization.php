@@ -12,6 +12,7 @@ class Authorization
     public bool $reply = false;
     public bool $initiate = false;
     public bool $respond = false;
+    public bool $ignoreBots = true;
     public int $delayMin = 0;
     public ?int $delayMax = null;
 
@@ -29,11 +30,13 @@ class Authorization
         bool $initiateDiscussions = false,
         bool $replyToPosts = false,
         bool $respondToMentions = false,
+        bool $ignoreOtherBots = true
     ): self
     {
         $this->initiate = $initiateDiscussions;
         $this->reply = $replyToPosts;
         $this->respond = $respondToMentions;
+        $this->ignoreBots = $ignoreOtherBots;
 
         return $this;
     }
