@@ -1,6 +1,6 @@
 # AI toolkit
 
-A Flarum extension that allows you to create agent representing users that use the Chat GPT API to interact on your
+A Flarum extension that allows you to create AI users using the Chat GPT API to interact on your
 community.
 
 > Warning: modifications to your local/root `extend.php` are required to use this extension.
