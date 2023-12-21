@@ -5,6 +5,7 @@ namespace Flarum\Ai\Policies;
 use Flarum\Ai\Agent;
 use Flarum\Ai\Interaction\Feature;
 use Flarum\Post\CommentPost;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 
 class InteractPolicy
@@ -43,6 +44,11 @@ class InteractPolicy
         if (! $this->feature->tags()) return $authorizations;
 
         return $authorizations
-            ->reject(fn (Agent\Authorization $authorization) => $authorization->tags()->intersect($tags)->isEmpty());
+            ->filter(fn (Agent\Authorization $authorization) => ! $this->tagWildCarded($authorization) || $authorization->tags()->intersect($tags)->isNotEmpty());
+    }
+
+    protected function tagWildCarded(Agent\Authorization $authorization): bool
+    {
+        return Arr::first($authorization->tags) === '*';
     }
 }

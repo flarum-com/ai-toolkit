@@ -72,7 +72,7 @@ So, the steps:
   - the chat gpt model (optional)
   - a discussion id of the instructions for chat gpt (optional, but without it chat gpt can do whatever it likes)
 - Chain into that Ai, the instructions with
-  - A tag slug (optional, but I seriously recommend using this with the tags extension)
+  - A tag slug (optional, but I seriously recommend using this with the tags extension), you can also use `'*'` to allow all tags.
   - The permissions, of which:
     - `replyToPosts`: the Ai replies to posts
     - `respondToMentions`: the Ai responds when mentioned
