@@ -18,7 +18,7 @@ class Agent
         public readonly int|string $userKey,
         public readonly Agent\Model $model,
         public readonly array $authorizations = [],
-        public readonly ?int $instructions = null
+        public readonly int|null $instructions = null
     )
     {}
 

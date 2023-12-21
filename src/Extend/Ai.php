@@ -20,8 +20,8 @@ class Ai implements ExtenderInterface
     public function __construct(
         protected string $key,
         protected readonly int|string $represents,
-        protected readonly Model|string $model,
-        protected int|null $instructions,
+        protected readonly Model|string $model = Model::gpt_3_5_turbo,
+        protected int|null $instructions = null,
     )
     {}
 
